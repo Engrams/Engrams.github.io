@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-14T01:26:28.567Z</updated>
+  <updated>2019-08-14T02:42:16.073Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,34 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/08/14/hello-world/"/>
-    <id>http://yoursite.com/2019/08/14/hello-world/</id>
-    <published>2019-08-14T01:26:28.567Z</published>
-    <updated>2019-08-14T01:26:28.567Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>上传代码到GitHub</title>
+    <title>上传代码到GitHub并预览</title>
     <link href="http://yoursite.com/2019/08/13/%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81%E5%88%B0GitHub%E5%B9%B6%E9%A2%84%E8%A7%88/"/>
     <id>http://yoursite.com/2019/08/13/上传代码到GitHub并预览/</id>
     <published>2019-08-13T09:23:11.000Z</published>
-    <updated>2019-08-14T02:10:17.683Z</updated>
+    <updated>2019-08-14T02:42:16.073Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一、建库"><a href="#一、建库" class="headerlink" title="一、建库"></a>一、建库</h2><h3 id="1-注册和登陆你的GitHub账号"><a href="#1-注册和登陆你的GitHub账号" class="headerlink" title="1.注册和登陆你的GitHub账号"></a>1.注册和登陆你的GitHub账号</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/20190813165810.png" alt></p><h3 id="2-创建一个库，填写库名称。"><a href="#2-创建一个库，填写库名称。" class="headerlink" title="2.创建一个库，填写库名称。"></a>2.创建一个库，填写库名称。</h3><h3 id><a href="#" class="headerlink" title></a><img src="/2019/08/13/上传代码到GitHub并预览/20190813201717.png" alt="微信图片_20190813201717"></h3><h3 id="3-复制库的连接，之后上传代码会用到。"><a href="#3-复制库的连接，之后上传代码会用到。" class="headerlink" title="3.复制库的连接，之后上传代码会用到。"></a>3.复制库的连接，之后上传代码会用到。</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/20190813202948.png" alt="微信图片_20190813202948"></p><h2 id="二-上传代码"><a href="#二-上传代码" class="headerlink" title="二.上传代码"></a>二.上传代码</h2><h3 id="1-安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git-Bash"><a href="#1-安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git-Bash" class="headerlink" title="1.安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git Bash"></a>1.安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git Bash</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/20190813204039.png" alt></p><h3 id="2-打开Git-Bash，通过命令进入上传代码。"><a href="#2-打开Git-Bash，通过命令进入上传代码。" class="headerlink" title="2.打开Git Bash，通过命令进入上传代码。"></a>2.打开Git Bash，通过命令进入上传代码。</h3><ul><li>通过命令进入待上传的代码文件夹，命令格式：cd x(盘的字母):\xxx\xxx\xxx</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/2019081322.png" alt="微信图片_2019081322"></p><ul><li>输入git init，在该文件夹生成本地git管理</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/20191943.png" alt></p><ul><li>输入git add .   将文件夹所有文件上传到仓库，如果想添加某个文件，把“.”替换成文件名替换就行</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/3.png" alt></p><ul><li>输入git commit -m “first commit”  给提交的文件注释，双引号里内容据需要修改注释</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/4.png" alt></p><ul><li><p>如果出现这种情况，输入你的注册邮箱或名字。然后在输入一次git commit -m “first commit”</p><p><img src="/2019/08/13/上传代码到GitHub并预览/20180704091357264.png" alt></p></li><li><p>输入git remote add origin 自己的仓库url地址，将本地的仓库关联到github上</p></li><li><p>输入git push -u origin master 将代码上传到仓库。</p></li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/5.png" alt></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="一、建库"><a href="#一、建库" class="headerlink" title="一、建库"></a>一、建库</h2><h3 id="1-注册和登陆你的GitHub账号"><a href="#1-注册和登陆你的GitHub账号" class="headerlink" title="1.注册和登陆你的GitHub账号"></a>1.注册和登陆你的GitHub账号</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/20190813165810.png" alt></p><h3 id="2-创建一个库，填写库名称。"><a href="#2-创建一个库，填写库名称。" class="headerlink" title="2.创建一个库，填写库名称。"></a>2.创建一个库，填写库名称。</h3><h3 id><a href="#" class="headerlink" title></a><img src="/2019/08/13/上传代码到GitHub并预览/20190813201717.png" alt="微信图片_20190813201717"></h3><h3 id="3-复制库的连接，之后上传代码会用到。"><a href="#3-复制库的连接，之后上传代码会用到。" class="headerlink" title="3.复制库的连接，之后上传代码会用到。"></a>3.复制库的连接，之后上传代码会用到。</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/20190813202948.png" alt="微信图片_20190813202948"></p><h2 id="二-上传代码"><a href="#二-上传代码" class="headerlink" title="二.上传代码"></a>二.上传代码</h2><h3 id="1-安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git-Bash"><a href="#1-安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git-Bash" class="headerlink" title="1.安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git Bash"></a>1.安装Git，在网上百度搜索Git，安装最新版就行。没什么特殊步骤，一直按next就行。然后在安装目录或者在win键的最近添加找到Git Bash</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/20190813204039.png" alt></p><h3 id="2-打开Git-Bash，通过命令进入上传代码。"><a href="#2-打开Git-Bash，通过命令进入上传代码。" class="headerlink" title="2.打开Git Bash，通过命令进入上传代码。"></a>2.打开Git Bash，通过命令进入上传代码。</h3><ul><li>通过命令进入待上传的代码文件夹，命令格式：cd x(盘的字母):\xxx\xxx\xxx</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/2019081322.png" alt="微信图片_2019081322"></p><ul><li>输入git init，在该文件夹生成本地git管理</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/20191943.png" alt></p><ul><li>输入git add .   将文件夹所有文件上传到仓库，如果想添加某个文件，把“.”替换成文件名替换就行</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/3.png" alt></p><ul><li>输入git commit -m “first commit”  给提交的文件注释，双引号里内容据需要修改注释</li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/4.png" alt></p><ul><li><p>如果出现这种情况，输入你的注册邮箱或名字。然后在输入一次git commit -m “first commit”</p><p><img src="/2019/08/13/上传代码到GitHub并预览/20180704091357264.png" alt></p></li><li><p>输入git remote add origin 自己的仓库url地址，将本地的仓库关联到github上</p></li><li><p>输入git push -u origin master 将代码上传到仓库。</p></li></ul><p><img src="/2019/08/13/上传代码到GitHub并预览/5.png" alt></p><h2 id="三、预览代码"><a href="#三、预览代码" class="headerlink" title="三、预览代码"></a>三、预览代码</h2><p>最近在学习前端，所以在GitHub提交自己的前端代码。在网页上显示在GitHub的前端代码效果，本人觉得最简单的方法：</p><h3 id="1-上传代码之后，点击库里的要显示的html文件。"><a href="#1-上传代码之后，点击库里的要显示的html文件。" class="headerlink" title="1.上传代码之后，点击库里的要显示的html文件。"></a>1.上传代码之后，点击库里的要显示的html文件。</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/6.png" alt></p><h3 id="2-复制html文件页面的链接"><a href="#2-复制html文件页面的链接" class="headerlink" title="2.复制html文件页面的链接"></a>2.复制html文件页面的链接</h3><p><img src="/2019/08/13/上传代码到GitHub并预览/7.png" alt></p><h3 id="3-http-htmlpreview-github-io-加上你复制的链接"><a href="#3-http-htmlpreview-github-io-加上你复制的链接" class="headerlink" title="3.http://htmlpreview.github.io/?加上你复制的链接"></a>3.<a href="http://htmlpreview.github.io/?加上你复制的链接" target="_blank" rel="noopener">http://htmlpreview.github.io/?加上你复制的链接</a></h3><p><img src="/2019/08/13/上传代码到GitHub并预览/8.png" alt></p><hr><p>以上就是上传代码到GitHub并预览的全过程。如有错漏，多多指点。</p>]]></content>
     
     <summary type="html">
     
@@ -67,20 +46,19 @@
   </entry>
   
   <entry>
-    <title>上传图片到博客</title>
-    <link href="http://yoursite.com/2019/08/13/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%88%B0%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2019/08/13/上传图片到博客/</id>
+    <title>上传图片到hexo博客</title>
+    <link href="http://yoursite.com/2019/08/13/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%88%B0hexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2019/08/13/上传图片到hexo博客/</id>
     <published>2019-08-13T09:18:10.000Z</published>
-    <updated>2019-08-13T09:22:17.147Z</updated>
+    <updated>2019-08-14T03:18:25.204Z</updated>
     
-    <content type="html"><![CDATA[<p>###　</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="1-修改博客根目录的-congig-yml文件中的post-asset-folder为true"><a href="#1-修改博客根目录的-congig-yml文件中的post-asset-folder为true" class="headerlink" title="1.修改博客根目录的_congig.yml文件中的post_asset_folder为true"></a>1.修改博客根目录的_congig.yml文件中的post_asset_folder为true</h3><p>设置完后，在hexo  new  “新文件”后，_post目录会出现同名的文件夹，在这个文件夹放入文章要用的资源。</p><p><img src="/2019/08/13/上传图片到hexo博客/1.png" alt></p><p><img src="/2019/08/13/上传图片到hexo博客/2.png" alt></p><h3 id="2-安装显示图片的插件，用管理员运行cmd，在博客根目录下运行-npm-install-hexo-asset-image-–save命令。"><a href="#2-安装显示图片的插件，用管理员运行cmd，在博客根目录下运行-npm-install-hexo-asset-image-–save命令。" class="headerlink" title="2.安装显示图片的插件，用管理员运行cmd，在博客根目录下运行 npm install hexo-asset-image –save命令。"></a>2.安装显示图片的插件，用管理员运行cmd，在博客根目录下运行 npm install hexo-asset-image –save命令。</h3><p>出现以下警告可以不用理会，+ hexo <a href="mailto:-asset-images@0.0.5" target="_blank" rel="noopener">-asset-images@0.0.5</a>说明已安装。</p><p><img src="/2019/08/13/上传图片到hexo博客/3.png" alt></p><h3 id="3-在-md文章引用图片，使用的是相对地址，"><a href="#3-在-md文章引用图片，使用的是相对地址，" class="headerlink" title="3.在.md文章引用图片，使用的是相对地址，"></a>3.在.md文章引用图片，使用的是相对地址，<img src="/2019/08/13/上传图片到hexo博客/%E5%9B%BE%E7%89%87%E5%90%8D%E5%AD%97.jpg" alt="使用图片"></h3><p><font color="red"><strong>注意：用的是/，还有是相对地址</strong></font></p><p><strong>大功告成，然后hexo clean 、hexo g、hexo s、hexo d四连查看效果。</strong></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;###　&lt;/p&gt;
-
+        &lt;h3 id=&quot;1-修改博客根目录的-congig-yml文件中的post-asset-folder为true&quot;&gt;&lt;a href=&quot;#1-修改博客根目录的-congig-yml文件中的post-asset-folder为true&quot; class=&quot;headerlink&quot; title
       
     
     </summary>
