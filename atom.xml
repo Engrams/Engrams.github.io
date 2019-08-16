@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-14T02:42:16.073Z</updated>
+  <updated>2019-08-16T07:59:08.882Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端学习-Day5</title>
+    <link href="http://yoursite.com/2019/08/14/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0-Day5/"/>
+    <id>http://yoursite.com/2019/08/14/前端学习-Day5/</id>
+    <published>2019-08-14T08:44:11.000Z</published>
+    <updated>2019-08-16T07:59:08.882Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>学习用时：4小时</li><li>学习目标：零基础学院-第五天</li><li>目标是否达成：已达成</li></ul><hr><h2 id="浮动（float）"><a href="#浮动（float）" class="headerlink" title="浮动（float）"></a>浮动（float）</h2><h3 id="1-定义："><a href="#1-定义：" class="headerlink" title="1.定义："></a>1.定义：</h3><p>浮动元素会脱离正常的文档布局流，并吸附到其父容器的左或右。在正常布局中位于该浮动元素之下的内容，此时会围绕着浮动元素，填满其另一侧的空间。</p><h3 id="2-属性："><a href="#2-属性：" class="headerlink" title="2.属性："></a>2.属性：</h3><ul><li><strong>left ：</strong>使左边缘接触包含块的左边缘或另一浮动块的右边缘。</li><li><strong>right ：</strong> 使右边缘接触包含块的右边缘或另一浮动块的左边缘。</li><li><strong>none：</strong>元素不浮动。</li></ul><p><strong>注意：</strong></p><p><strong>1.浮动元素的框内要有内容，或者设定高宽才占空间。</strong></p><p><strong>2.浮动之下的内容，文字包括图片都会围绕浮动元素。</strong></p><h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><h3 id="1-定义"><a href="#1-定义" class="headerlink" title="1.定义"></a>1.定义</h3><p>指定一个元素是否必须移动(清除浮动后)到在它之前的浮动元素下面。clear属性适用于浮动和非浮动元素。</p><h3 id="2-属性：-1"><a href="#2-属性：-1" class="headerlink" title="2.属性："></a>2.属性：</h3><ul><li>none：元素不会向下移动清除之前的浮动。</li><li>right：元素被向下移动用于清除之前的右浮动。</li><li>left：元素被向下移动用于清除之前的左浮动。</li><li>both：元素被向下移动用于清除之前的左右浮动。</li></ul><p><strong>注意：</strong></p><p><strong>1.浮动元素使用该属性，则下一个浮动元素就是在使用该属性的同层漂浮。</strong></p><p><strong>2.非浮动元素使用该属性，则下一个浮动元素就是在使用该属性的下一层层漂浮。</strong></p><h2 id="块格式化上下文-Block-Formatting-Context-BFC"><a href="#块格式化上下文-Block-Formatting-Context-BFC" class="headerlink" title="块格式化上下文(Block Formatting Context,BFC)"></a>块格式化上下文(Block Formatting Context,BFC)</h2><h3 id="1-定义-1"><a href="#1-定义-1" class="headerlink" title="1.定义"></a>1.定义</h3><p>Web页面的可视化CSS渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域。</p><h3 id="2-常用促发用法"><a href="#2-常用促发用法" class="headerlink" title="2.常用促发用法"></a>2.常用促发用法</h3><ul><li>在浮动元素的末尾添加一个空元素，设置 clear：both属性。</li><li>使用after伪元素其实也是通过 content 在元素的后面生成了内容为一个点的块级元素。（由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。）</li><li>设置父元素 overflow 或者display：table 属性来闭合浮动。</li></ul><h3 id="3-处理相关问题"><a href="#3-处理相关问题" class="headerlink" title="3.处理相关问题"></a>3.处理相关问题</h3><ul><li><h4 id="父盒子坍塌问题"><a href="#父盒子坍塌问题" class="headerlink" title="父盒子坍塌问题"></a><strong>父盒子坍塌问题</strong></h4><p>浮动脱离了文档流，浮动子元素超出父盒子。</p></li><li><h4 id="外边距坍塌"><a href="#外边距坍塌" class="headerlink" title="外边距坍塌"></a><strong>外边距坍塌</strong></h4><p>块级元素的margin-top和下外边距（margin-bottom）有时会合并为一个外边距，其大小取其中最大者。</p></li></ul><hr><p>以上为学习内容总结，如有错漏，多多指点。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;学习用时：4小时&lt;/li&gt;
+&lt;li&gt;学习目标：零基础学院-第五天&lt;/li&gt;
+&lt;li&gt;目标是否达成：已达成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;浮动（float）&quot;&gt;&lt;a href=&quot;#浮动（float）&quot; class=&quot;headerlink&quot; tit
+      
+    
+    </summary>
+    
+    
+      <category term="前端学习" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端学习-Day4</title>
+    <link href="http://yoursite.com/2019/08/14/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0-Day4/"/>
+    <id>http://yoursite.com/2019/08/14/前端学习-Day4/</id>
+    <published>2019-08-14T07:00:59.000Z</published>
+    <updated>2019-08-16T07:59:10.856Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>学习用时：4小时</li><li>学习目标：零基础学院-第四天</li><li>目标是否达成：已达成</li></ul><hr><h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><h3 id="1-定义"><a href="#1-定义" class="headerlink" title="1.定义"></a>1.定义</h3><p>CSS框模型（也称盒模型）是网页布局的基础——每个元素代表一个矩形的方框，框的内容、内边距、边界和外边距像洋葱的膜一样，一层层构建起来。</p><h3 id="2-框常用属性"><a href="#2-框常用属性" class="headerlink" title="2.框常用属性"></a>2.框常用属性</h3><p>框每一层的大小都可以使用一些特定的CSS属性调整。相关属性如下：</p><ul><li><h4 id="width、height"><a href="#width、height" class="headerlink" title="width、height"></a><strong>width、height</strong></h4><ul><li><strong>定义：</strong>width和height设置内容框的<strong>宽度</strong>和<strong>高度</strong>。内容框是框内容显示的区域——包括框内的文本内容以及嵌套的子元素框。</li><li><strong>运用：</strong>通过设置width、height的大小来设置内容框的大小。使用px或百分比。</li></ul></li><li><h4 id="padding"><a href="#padding" class="headerlink" title="padding"></a><strong>padding</strong></h4><ul><li><strong>定义：</strong>padding是CSS框的<strong>内边距</strong>——这一层是位于<strong>内容框</strong>与<strong>边界（border）</strong>之间。</li><li><strong>运用：</strong>padding只有大小设置。padding-top、padding-bottom、padding-left、padding-right四个值可以单独使用也可以通过padding简写使用。</li></ul></li><li><h4 id="border"><a href="#border" class="headerlink" title="border"></a><strong>border</strong></h4><ul><li><strong>定义：</strong>border是CSS框的<strong>边界</strong>——这一层是位于<strong>外边距（margin）</strong>与<strong>内边距（padding）</strong>之间。</li><li><strong>运用：</strong><ul><li>border简写：可以一次性设置四个边的厚度、风格、颜色属性。例如border：1px solid red。</li><li>border-width，border-style，border-color：分别设置四个边的宽度、风格、颜色。</li><li>border-top-width，border-top-style，border-top-color：单独设置一个边的三个不同的属性。</li></ul></li></ul></li><li><h4 id="margin"><a href="#margin" class="headerlink" title="margin"></a><strong>margin</strong></h4><ul><li><p><strong>margin</strong>是CSS框周围的外部区域，称为<strong>外边距</strong>。</p></li><li><p><strong>运用：</strong>margin只有大小设置。margin-top、margin-bottom、margin-left、margin-right四个值可以单独使用也可以通过margin简写使用。</p></li></ul></li></ul><h4 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h4><ul><li><p><strong>1.盒子元素总空间=border+padding+width*height。</strong></p></li><li><p><strong>2.外边距合并问题：块级元素的margin-top和下外边距（margin-bottom）有时会合并为一个外边距，其大小取其中最大者。</strong></p></li><li><p><strong>3.%设置大小：会根据页面的大小而改变；px设置大小：不会根据页面大小而改变。</strong></p></li></ul><h3 id="3-框的其他属性"><a href="#3-框的其他属性" class="headerlink" title="3.框的其他属性"></a>3.框的其他属性</h3><ul><li><h4 id="溢流"><a href="#溢流" class="headerlink" title="溢流"></a><strong>溢流</strong></h4><ul><li><strong>定义：</strong>当使用绝对值来设置框的大小，而大小不适合放置的内容，就会出现内容从盒子溢出。</li><li><strong>运用：</strong>使用overflow属性来控制这种情况的发生，属性值有<ul><li>auto：当内容过多，溢流的内容被隐藏，通过滚动条来查看所有内容。</li><li>hidden：当内容过多，溢流的内容被隐藏。</li><li>visible: 当内容过多，溢流的内容被显示在盒子的外边。（默认属性）</li></ul></li></ul></li><li><h4 id="背景裁剪（background-clip）"><a href="#背景裁剪（background-clip）" class="headerlink" title="背景裁剪（background-clip）"></a>背景裁剪（background-clip）</h4><ul><li><strong>定义：</strong>设置元素的背景（背景图片或颜色）是否延伸到边框下面。</li><li><strong>运用：</strong><ul><li><strong>border-box：</strong>背景延伸至边框外沿。</li><li><strong>padding-box：</strong>背景延伸至内边距（padding）外沿。</li><li><strong>content-box：</strong>背景被裁剪至内容区（content box）外沿。</li><li><strong>text：</strong>背景被裁剪成文字的前景色。</li></ul></li></ul></li><li><h4 id="轮廓（Outline）"><a href="#轮廓（Outline）" class="headerlink" title="轮廓（Outline）"></a>轮廓（Outline）</h4><ul><li><strong>定义：</strong>盒子的 outline 看起来像边框，但是它不是盒模型的一部分。它表现得像边框，但是是画在盒子之上，不会修改盒子的大小（具体来说，outline 是画在边框之外，外边距区域之内）。</li></ul></li><li><h4 id="框显示类型（display）"><a href="#框显示类型（display）" class="headerlink" title="框显示类型（display）"></a>框显示类型（display）</h4><ul><li><strong>block（块元素）：</strong>定义为堆放在其他框上的框，内容会独占一行。</li><li><strong>inline（行内元素）：</strong>与块框是相反的，它随着文档的文字流动。设置宽高无效，设置padding, margin 和 border都会更新周围文字的位置。</li><li><strong>inline-box（行内块元素）：</strong>上述两种的集合：它不会重新另起一行但会像行内元素（ inline）一样随着周围文字而流动，而且他能够设置宽高，并且像块框一样保持了其块特性的完整性，它不会在段落行中断开。</li></ul></li></ul><hr><p>以上为学习内容总结，如有错漏，多多指点。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;学习用时：4小时&lt;/li&gt;
+&lt;li&gt;学习目标：零基础学院-第四天&lt;/li&gt;
+&lt;li&gt;目标是否达成：已达成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;盒模型&quot;&gt;&lt;a href=&quot;#盒模型&quot; class=&quot;headerlink&quot; title=&quot;盒模型&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="前端学习" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>上传代码到GitHub并预览</title>
