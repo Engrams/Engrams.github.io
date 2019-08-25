@@ -152,6 +152,112 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-前端学习-input输入框透明样式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/25/前端学习-input输入框透明样式/">前端学习-input输入框透明样式</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/25/前端学习-input输入框透明样式/" class="archive-article-date">
+  	<time datetime="2019-08-25T09:16:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="实现目标如下："><a href="#实现目标如下：" class="headerlink" title="实现目标如下："></a>实现目标如下：</h4><p><img src="/2019/08/25/前端学习-input输入框透明样式/1.png" alt></p>
+<p><strong>html代码：</strong></p>
+<p><img src="/2019/08/25/前端学习-input输入框透明样式/2.png" alt></p>
+<h4 id="1-设置input输入框的宽高和外边距"><a href="#1-设置input输入框的宽高和外边距" class="headerlink" title="1.设置input输入框的宽高和外边距"></a>1.设置input输入框的宽高和外边距</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.in &#123;</span><br><span class="line">            width: 291px;</span><br><span class="line">            height: 48px;</span><br><span class="line">            margin-right: 40px;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-设置输入框字体大小、颜色和缩进"><a href="#2-设置输入框字体大小、颜色和缩进" class="headerlink" title="2.设置输入框字体大小、颜色和缩进"></a>2.设置输入框字体大小、颜色和缩进</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.in &#123;</span><br><span class="line">            ...</span><br><span class="line">            font-size: 14px;</span><br><span class="line">            text-indent: 20px;</span><br><span class="line">            color: hsla(0,0%,100%,.2);</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-设置透明背景和半透明边框"><a href="#3-设置透明背景和半透明边框" class="headerlink" title="3.设置透明背景和半透明边框"></a>3.设置透明背景和半透明边框</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.in &#123;</span><br><span class="line">            ...</span><br><span class="line">            border: 1px solid hsla(0,0%,100%,.2);</span><br><span class="line">            border-radius: 5px;</span><br><span class="line">            background-color: transparent;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="HSLA（Hue-Saturation-lightness-Alpha）"><a href="#HSLA（Hue-Saturation-lightness-Alpha）" class="headerlink" title="HSLA（Hue-Saturation-lightness-Alpha）"></a>HSLA（Hue-Saturation-lightness-Alpha）</h4><h4 id="取值："><a href="#取值：" class="headerlink" title="取值："></a>取值：</h4><ul>
+<li><strong>H：</strong>Hue(色调)。0(或360)表示红色，120表示绿色，240表示蓝色，也可取其他数值来指定颜色。取值为：0 - 360</li>
+<li><strong>S：</strong>Saturation(饱和度)。取值为：0.0% - 100.0%</li>
+<li><strong>L：</strong>Lightness(亮度)。取值为：0.0% - 100.0%</li>
+<li><strong>A：</strong>Alpha透明度。取值0~1之间。</li>
+</ul>
+<h4 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h4><p>HSL记法</p>
+<p>此色彩模式与HSL相同，只是在HSL模式上新增了Alpha透明度。</p>
+<hr>
+<h4 id="text-indent和padding-left的区别"><a href="#text-indent和padding-left的区别" class="headerlink" title="text-indent和padding-left的区别"></a>text-indent和padding-left的区别</h4><ul>
+<li><code>padding-left</code>基于盒模型，适用于inline和block层级的元素<ul>
+<li><code>padding-left</code>会作用于<code>inline框</code>或<code>block框</code>的左侧padding区域，会影响到content-box，而文字子节点会出现在content-box内部，因此所有文字都会左移。</li>
+</ul>
+</li>
+<li><code>text-indent</code>基于行内排版，仅仅适用于block层级的元素，作用于block层级的元素的内部第一行文字<ul>
+<li><code>text-indent</code>会作用于<code>block框</code>的第一行文字。无论是文字超过容器的宽度被<code>white-space</code>的相应规则截断，还是文字中的回车被<code>white-space</code>的相应规则保留，最终导致第二行第三行第N行出现，后面的第二行第三行第N行都不会应用到相应的indent。<code>text-indent</code>的目的很纯净，就是为了模拟现实排版需求中的<strong>首行</strong>缩进效果。</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hsla</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/25/前端学习-input输入框透明样式/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-前端学习-切图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1594,107 +1700,10 @@ CSS（Cascading Style Sheets）指层叠样式表，是一种用于用户指定�
 
 
   
-    <article id="post-闲聊百科-青菜变黄" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/07/闲聊百科-青菜变黄/">闲聊百科-青菜变黄</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/07/闲聊百科-青菜变黄/" class="archive-article-date">
-  	<time datetime="2019-08-07T04:38:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="青菜变黄的原因"><a href="#青菜变黄的原因" class="headerlink" title="青菜变黄的原因"></a>青菜变黄的原因</h2><p>最近对在冰箱放久的变黄青菜很好奇，就百度了一下。<br>找到了相关的内容：</p>
-<ul>
-<li><p><font face="微软雅黑" color="green" size="4">青菜绿色的原因：</font></p>
-<p>青菜有中有两种青菜中有两种自然色素，一种是叶绿素，另一种是花青素。新鲜蔬菜叶绿素比较有活性，就掩盖了花青素的颜色，所以蔬菜呈现绿色。</p>
-</li>
-<li><p><font face="微软雅黑" color="GoldenRod" size="4">青菜放久变黄的原因：</font></p>
-<p>当蔬菜放久了以后，叶绿素被破坏后,就显露出花青素的颜色，因为花青素一般是黄色的,所以放久了的青菜一般就会变黄。</p>
-</li>
-</ul>
-<hr>
-<p>相关资料：</p>
-<p>1、叶绿素是植物进行光合作用的主要色素，是一类含脂的色素家族，位于类囊体膜。叶绿素吸收大部分的红光和紫光但反射绿光，所以叶绿素呈现绿色，它在光合作用的光吸收中起核心作用。叶绿素为镁卟啉化合物，包括叶绿素a、b、c、d、f以及原叶绿素和细菌叶绿素等。叶绿素不很稳定，光、酸、碱、氧、氧化剂等都会使其分解。酸性条件下，叶绿素分子很容易失去卟啉环中的镁成为去镁叶绿素。叶绿素有造血提供维生素、解毒、抗病等多种用途。</p>
-<p>2、花青素，又称花色素，是自然界一类广泛存在于植物中的水溶性天然色素，是花色苷水解而得的有颜色的苷元 。水果、蔬菜、花卉中的主要呈色物质大部分与之有关。在植物细胞液泡不同的PH 值条件下，花青素使花瓣呈现五彩缤纷的颜色。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">闲聊百科</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">青菜</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/闲聊百科//" class="article-tag-list-link color5">闲聊百科</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/07/闲聊百科-青菜变黄/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -1792,19 +1801,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">上传图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">上传代码</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">GitHub</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">上传图片</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1816,11 +1829,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">切图</a>
+                <a href="javascript:void(0)" class="js-tag color5">hsla</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
+                <a href="javascript:void(0)" class="js-tag color3">切图</a>
               </li>
              
               <li class="article-tag-list-item">

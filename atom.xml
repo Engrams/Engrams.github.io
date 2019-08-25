@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-24T11:19:22.112Z</updated>
+  <updated>2019-08-25T12:17:16.090Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端学习-input输入框透明样式</title>
+    <link href="http://yoursite.com/2019/08/25/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0-input%E8%BE%93%E5%85%A5%E6%A1%86%E9%80%8F%E6%98%8E%E6%A0%B7%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/08/25/前端学习-input输入框透明样式/</id>
+    <published>2019-08-25T09:16:41.000Z</published>
+    <updated>2019-08-25T12:17:16.090Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="实现目标如下："><a href="#实现目标如下：" class="headerlink" title="实现目标如下："></a>实现目标如下：</h4><p><img src="/2019/08/25/前端学习-input输入框透明样式/1.png" alt></p><p><strong>html代码：</strong></p><p><img src="/2019/08/25/前端学习-input输入框透明样式/2.png" alt></p><h4 id="1-设置input输入框的宽高和外边距"><a href="#1-设置input输入框的宽高和外边距" class="headerlink" title="1.设置input输入框的宽高和外边距"></a>1.设置input输入框的宽高和外边距</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.in &#123;</span><br><span class="line">            width: 291px;</span><br><span class="line">            height: 48px;</span><br><span class="line">            margin-right: 40px;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure><h4 id="2-设置输入框字体大小、颜色和缩进"><a href="#2-设置输入框字体大小、颜色和缩进" class="headerlink" title="2.设置输入框字体大小、颜色和缩进"></a>2.设置输入框字体大小、颜色和缩进</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.in &#123;</span><br><span class="line">            ...</span><br><span class="line">            font-size: 14px;</span><br><span class="line">            text-indent: 20px;</span><br><span class="line">            color: hsla(0,0%,100%,.2);</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure><h4 id="3-设置透明背景和半透明边框"><a href="#3-设置透明背景和半透明边框" class="headerlink" title="3.设置透明背景和半透明边框"></a>3.设置透明背景和半透明边框</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.in &#123;</span><br><span class="line">            ...</span><br><span class="line">            border: 1px solid hsla(0,0%,100%,.2);</span><br><span class="line">            border-radius: 5px;</span><br><span class="line">            background-color: transparent;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure><hr><h4 id="HSLA（Hue-Saturation-lightness-Alpha）"><a href="#HSLA（Hue-Saturation-lightness-Alpha）" class="headerlink" title="HSLA（Hue-Saturation-lightness-Alpha）"></a>HSLA（Hue-Saturation-lightness-Alpha）</h4><h4 id="取值："><a href="#取值：" class="headerlink" title="取值："></a>取值：</h4><ul><li><strong>H：</strong>Hue(色调)。0(或360)表示红色，120表示绿色，240表示蓝色，也可取其他数值来指定颜色。取值为：0 - 360</li><li><strong>S：</strong>Saturation(饱和度)。取值为：0.0% - 100.0%</li><li><strong>L：</strong>Lightness(亮度)。取值为：0.0% - 100.0%</li><li><strong>A：</strong>Alpha透明度。取值0~1之间。</li></ul><h4 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h4><p>HSL记法</p><p>此色彩模式与HSL相同，只是在HSL模式上新增了Alpha透明度。</p><hr><h4 id="text-indent和padding-left的区别"><a href="#text-indent和padding-left的区别" class="headerlink" title="text-indent和padding-left的区别"></a>text-indent和padding-left的区别</h4><ul><li><code>padding-left</code>基于盒模型，适用于inline和block层级的元素<ul><li><code>padding-left</code>会作用于<code>inline框</code>或<code>block框</code>的左侧padding区域，会影响到content-box，而文字子节点会出现在content-box内部，因此所有文字都会左移。</li></ul></li><li><code>text-indent</code>基于行内排版，仅仅适用于block层级的元素，作用于block层级的元素的内部第一行文字<ul><li><code>text-indent</code>会作用于<code>block框</code>的第一行文字。无论是文字超过容器的宽度被<code>white-space</code>的相应规则截断，还是文字中的回车被<code>white-space</code>的相应规则保留，最终导致第二行第三行第N行出现，后面的第二行第三行第N行都不会应用到相应的indent。<code>text-indent</code>的目的很纯净，就是为了模拟现实排版需求中的<strong>首行</strong>缩进效果。</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;实现目标如下：&quot;&gt;&lt;a href=&quot;#实现目标如下：&quot; class=&quot;headerlink&quot; title=&quot;实现目标如下：&quot;&gt;&lt;/a&gt;实现目标如下：&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/2019/08/25/前端学习-input输入框透明样式/1.png&quot; alt
+      
+    
+    </summary>
+    
+    
+      <category term="前端学习" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="hsla" scheme="http://yoursite.com/tags/hsla/"/>
+    
+  </entry>
   
   <entry>
     <title>前端学习-切图</title>
